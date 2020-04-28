@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio Page</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="left">
+        <div class="navbar-link active">
+          <a href="index.html">Home</a>
+        </div>
+        <div class="navbar-link">
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <div class="right">
+
+
+        <div class="">
+          DIGI DEVELOPERS
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="portfolios">
+        <!-- First protfolio -->
+        <div class="portfolio">
+          <div class="img-background" style="background-image:url(images/portfolio1.jpg)">
+          </div>
+          <div class="img-text">
+            <div class="logo">
+              <img src="images/logos/quip.png" alt="">
+
+            </div>
+            <div class="subtitle">
+              this is the picture for the portfolio samples that i have made.
+            </div>
+          </div>
+        </div>
+<!-- 2nd portfolio -->
+        <div class="portfolio">
+          <div class="img-background" style="background-image:url(images/portfolio2.jpg)">
+          </div>
+          <div class="img-text">
+            <div class="logo">
+              <img src="images/logos/devcamp.png" alt="">
+
+            </div>
+            <div class="subtitle">
+              this is the picture for the portfolio samples that i have made.
+            </div>
+          </div>
+        </div>
+<!-- 3rd Portfolio -->
+        <div class="portfolio">
+          <div class="img-background" style="background-image:url(images/portfolio3.jpg)">
+          </div>
+          <div class="img-text">
+            <div class="logo">
+              <img src="images/logos/eventbrite.png" alt="">
+
+            </div>
+            <div class="subtitle">
+              this is the picture for the portfolio samples that i have made.
+            </div>
+          </div>
+        </div>
+<!-- 4th protfolio -->
+        <div class="portfolio">
+          <div class="img-background" style="background-image:url(images/portfolio4.jpg)">
+          </div>
+          <div class="img-text">
+            <div class="logo">
+              <img src="images/logos/shop-hacker.png" alt="">
+
+            </div>
+            <div class="subtitle">
+              this is the picture for the portfolio samples that i have made.
+            </div>
+          </div>
+        </div>
+<!-- 5th portfolio -->
+        <div class="portfolio">
+          <div class="img-background" style="background-image:url(images/portfolio5.jpg)">
+          </div>
+          <div class="img-text">
+            <div class="logo">
+              <img src="images/logos/crondose.png" alt="">
+
+            </div>
+            <div class="subtitle">
+              this is the picture for the portfolio samples that i have made.
+            </div>
+          </div>
+        </div>
+<!-- 6th portfolio -->
+        <div class="portfolio">
+          <div class="img-background" style="background-image:url(images/portfolio6.jpg)">
+          </div>
+          <div class="img-text">
+            <div class="logo">
+              <img src="images/logos/dailysmarty.png" alt="">
+
+            </div>
+            <div class="subtitle">
+              this is the picture for the portfolio samples that i have made.
+            </div>
+          </div>
+        </div>
+<!-- 7th portfolio -->
+        <div class="portfolio">
+          <div class="img-background" style="background-image:url(images/portfolio7.jpg)">
+          </div>
+          <div class="img-text">
+            <div class="logo">
+              <img src="images/logos/dashtrack.png" alt="">
+
+            </div>
+            <div class="subtitle">
+              this is the picture for the portfolio samples that i have made.
+            </div>
+          </div>
+        </div>
+<!-- 8th portfolio -->
+        <div class="portfolio">
+          <div class="img-background" style="background-image:url(images/portfolio8.jpg)">
+          </div>
+          <div class="img-text">
+            <div class="logo">
+              <img src="images/logos/devtrunk.png" alt="">
+
+            </div>
+            <div class="subtitle">
+              this is the picture for the portfolio samples that i have made.
+            </div>
+          </div>
+        </div>
+<!-- 9th portfolio -->
+        <div class="portfolio">
+          <div class="img-background" style="background-image:url(images/portfolio9.jpg)">
+          </div>
+          <div class="img-text">
+            <div class="logo">
+              <img src="images/logos/edutechional.png" alt="">
+
+            </div>
+            <div class="subtitle">
+              this is the picture for the portfolio samples that i have made.
+            </div>
+          </div>
+        </div>
+<!-- 10th portfolio -->
+        <div class="portfolio">
+          <div class="img-background" style="background-image:url(images/portfolio10.jpg)">
+          </div>
+          <div class="img-text">
+            <div class="logo">
+              <img src="images/logos/ministry-safe.png" alt="">
+
+            </div>
+            <div class="subtitle">
+              this is the picture for the portfolio samples that i have made.
+            </div>
+          </div>
+        </div>
+<!-- 11th portfolio -->
+        <div class="portfolio">
+          <div class="img-background" style="background-image:url(images/portfolio11.jpg)">
+          </div>
+          <div class="img-text">
+            <div class="logo">
+              <img src="images/logos/open-devos.png" alt="">
+
+            </div>
+            <div class="subtitle">
+              this is the picture for the portfolio samples that i have made.
+            </div>
+          </div>
+        </div>
+<!-- 12th portfolio -->
+        <div class="portfolio">
+          <div class="img-background" style="background-image:url(images/portfolio12.jpg)">
+          </div>
+          <div class="img-text">
+            <div class="logo">
+              <img src="images/logos/toastability.png" alt="">
+
+            </div>
+            <div class="subtitle">
+              this is the picture for the portfolio samples that i have made.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript">
+  const portfolioItems = document.querySelectorAll('.portfolio');
+
+  portfolioItems.forEach(item => {
+    item.addEventListener('mouseover',() =>{
+      item.childNodes[1].classList.add('img-darken');
+    });
+
+    item.addEventListener('mouseout',() =>{
+      item.childNodes[1].classList.remove('img-darken');
+    });
+  });
+
+</script>
+</html>
